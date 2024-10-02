@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping Myself</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="image-container">
+        <img src="image1.png" class="overlay-image image-1">
+        <img src="image2.png" class="overlay-image image-2">
+        <img src="image3.png" class="overlay-image image-3">
+        <img src="image4.png" class="overlay-image image-4">
+        
+    </div>
+
+    <div class="video-container">
+        <video class="video" autoplay loop muted playsinline>
+            <source src="map.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="background">
+        <img src="bg.png" class="mapdatabg">
+    </div>
+
+
+    <div class="music-container">
+        <audio id="video-music">
+            <source src="soundmap.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <img id="custom-cursor" src="locationpin.png" alt="custom cursor" style="position: absolute; pointer-events: none; z-index: 1000;">
+
+    
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>  
+    
+</body>
+</html>
